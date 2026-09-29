@@ -1,0 +1,16 @@
+@{ ViewData["Title"] = "Bursary claims"; }
+
+<section class="hero p-5 rounded-4 mb-4">
+    <div class="col-lg-8">
+        <p class="text-uppercase fw-semibold small mb-2">Student bursary programme</p>
+        <h1 class="display-5 fw-bold">Manage your monthly claims with confidence.</h1>
+        <p class="lead mb-4">Submit your hours, see the R200.00 hourly calculation instantly, and track your submitted claims.</p>
+        <a class="btn btn-light btn-lg me-2" asp-controller="Claims" asp-action="Create">Submit a claim</a>
+        <a class="btn btn-outline-light btn-lg" asp-controller="Claims" asp-action="Index">View my claims</a>
+    </div>
+</section>
+<div class="row g-4">
+    <div class="col-md-4"><div class="card h-100 shadow-sm border-0"><div class="card-body"><h2 class="h5">1. Submit hours</h2><p class="mb-0 text-secondary">Capture your details and hours worked for the month.</p></div></div></div>
+    <div class="col-md-4"><div class="card h-100 shadow-sm border-0"><div class="card-body"><h2 class="h5">2. Check amount</h2><p class="mb-0 text-secondary">Your claim value is calculated at the fixed R200.00 hourly rate.</p></div></div></div>
+    <div class="col-md-4"><div class="card h-100 shadow-sm border-0"><div class="card-body"><h2 class="h5">3. Track status</h2><p class="mb-0 text-secondary">Search your previous 12 months of claims and cancel pending submissions.</p></div></div></div>
+</div>
